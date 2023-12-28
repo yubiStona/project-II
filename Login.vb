@@ -60,4 +60,8 @@ Public Class Login
     Private Sub btnforgotpass_Click(sender As Object, e As EventArgs) Handles btnforgotpass.Click
 
     End Sub
+
+    Private Sub txtusername_TextChanged(sender As Object, e As EventArgs) Handles txtusername.TextChanged
+
+    End Sub
 End Class
