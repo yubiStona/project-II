@@ -30,11 +30,11 @@ Partial Class mainform
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         panelmenu = New Guna.UI2.WinForms.Guna2Panel()
-        IconButton5 = New FontAwesome.Sharp.IconButton()
-        IconButton4 = New FontAwesome.Sharp.IconButton()
-        IconButton3 = New FontAwesome.Sharp.IconButton()
-        IconButton2 = New FontAwesome.Sharp.IconButton()
-        IconButton1 = New FontAwesome.Sharp.IconButton()
+        btnuser = New FontAwesome.Sharp.IconButton()
+        btntables = New FontAwesome.Sharp.IconButton()
+        btnproduct = New FontAwesome.Sharp.IconButton()
+        btnorder = New FontAwesome.Sharp.IconButton()
+        btndashboard = New FontAwesome.Sharp.IconButton()
         panelogo = New Guna.UI2.WinForms.Guna2Panel()
         PictureBox1 = New PictureBox()
         Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
@@ -46,11 +46,11 @@ Partial Class mainform
         ' panelmenu
         ' 
         panelmenu.BackColor = Color.FromArgb(CByte(53), CByte(61), CByte(93))
-        panelmenu.Controls.Add(IconButton5)
-        panelmenu.Controls.Add(IconButton4)
-        panelmenu.Controls.Add(IconButton3)
-        panelmenu.Controls.Add(IconButton2)
-        panelmenu.Controls.Add(IconButton1)
+        panelmenu.Controls.Add(btnuser)
+        panelmenu.Controls.Add(btntables)
+        panelmenu.Controls.Add(btnproduct)
+        panelmenu.Controls.Add(btnorder)
+        panelmenu.Controls.Add(btndashboard)
         panelmenu.Controls.Add(panelogo)
         panelmenu.CustomizableEdges = CustomizableEdges3
         panelmenu.Dock = DockStyle.Left
@@ -60,115 +60,115 @@ Partial Class mainform
         panelmenu.Size = New Size(202, 784)
         panelmenu.TabIndex = 0
         ' 
-        ' IconButton5
+        ' btnuser
         ' 
-        IconButton5.Dock = DockStyle.Top
-        IconButton5.FlatAppearance.BorderSize = 0
-        IconButton5.FlatStyle = FlatStyle.Flat
-        IconButton5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        IconButton5.ForeColor = Color.Gainsboro
-        IconButton5.IconChar = FontAwesome.Sharp.IconChar.FastForward
-        IconButton5.IconColor = Color.Gainsboro
-        IconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto
-        IconButton5.IconSize = 32
-        IconButton5.ImageAlign = ContentAlignment.MiddleLeft
-        IconButton5.Location = New Point(0, 315)
-        IconButton5.Name = "IconButton5"
-        IconButton5.Padding = New Padding(10, 0, 20, 0)
-        IconButton5.Size = New Size(202, 50)
-        IconButton5.TabIndex = 5
-        IconButton5.Text = "User"
-        IconButton5.TextAlign = ContentAlignment.MiddleLeft
-        IconButton5.TextImageRelation = TextImageRelation.ImageBeforeText
-        IconButton5.UseVisualStyleBackColor = True
+        btnuser.Dock = DockStyle.Top
+        btnuser.FlatAppearance.BorderSize = 0
+        btnuser.FlatStyle = FlatStyle.Flat
+        btnuser.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnuser.ForeColor = Color.Gainsboro
+        btnuser.IconChar = FontAwesome.Sharp.IconChar.Users
+        btnuser.IconColor = Color.Gainsboro
+        btnuser.IconFont = FontAwesome.Sharp.IconFont.Auto
+        btnuser.IconSize = 32
+        btnuser.ImageAlign = ContentAlignment.MiddleLeft
+        btnuser.Location = New Point(0, 315)
+        btnuser.Name = "btnuser"
+        btnuser.Padding = New Padding(10, 0, 20, 0)
+        btnuser.Size = New Size(202, 50)
+        btnuser.TabIndex = 5
+        btnuser.Text = "User"
+        btnuser.TextAlign = ContentAlignment.MiddleLeft
+        btnuser.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnuser.UseVisualStyleBackColor = True
         ' 
-        ' IconButton4
+        ' btntables
         ' 
-        IconButton4.Dock = DockStyle.Top
-        IconButton4.FlatAppearance.BorderSize = 0
-        IconButton4.FlatStyle = FlatStyle.Flat
-        IconButton4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        IconButton4.ForeColor = Color.Gainsboro
-        IconButton4.IconChar = FontAwesome.Sharp.IconChar.FastForward
-        IconButton4.IconColor = Color.Gainsboro
-        IconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto
-        IconButton4.IconSize = 32
-        IconButton4.ImageAlign = ContentAlignment.MiddleLeft
-        IconButton4.Location = New Point(0, 265)
-        IconButton4.Name = "IconButton4"
-        IconButton4.Padding = New Padding(10, 0, 20, 0)
-        IconButton4.Size = New Size(202, 50)
-        IconButton4.TabIndex = 4
-        IconButton4.Text = "Tables"
-        IconButton4.TextAlign = ContentAlignment.MiddleLeft
-        IconButton4.TextImageRelation = TextImageRelation.ImageBeforeText
-        IconButton4.UseVisualStyleBackColor = True
+        btntables.Dock = DockStyle.Top
+        btntables.FlatAppearance.BorderSize = 0
+        btntables.FlatStyle = FlatStyle.Flat
+        btntables.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btntables.ForeColor = Color.Gainsboro
+        btntables.IconChar = FontAwesome.Sharp.IconChar.Table
+        btntables.IconColor = Color.Gainsboro
+        btntables.IconFont = FontAwesome.Sharp.IconFont.Auto
+        btntables.IconSize = 32
+        btntables.ImageAlign = ContentAlignment.MiddleLeft
+        btntables.Location = New Point(0, 265)
+        btntables.Name = "btntables"
+        btntables.Padding = New Padding(10, 0, 20, 0)
+        btntables.Size = New Size(202, 50)
+        btntables.TabIndex = 4
+        btntables.Text = "Tables"
+        btntables.TextAlign = ContentAlignment.MiddleLeft
+        btntables.TextImageRelation = TextImageRelation.ImageBeforeText
+        btntables.UseVisualStyleBackColor = True
         ' 
-        ' IconButton3
+        ' btnproduct
         ' 
-        IconButton3.Dock = DockStyle.Top
-        IconButton3.FlatAppearance.BorderSize = 0
-        IconButton3.FlatStyle = FlatStyle.Flat
-        IconButton3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        IconButton3.ForeColor = Color.Gainsboro
-        IconButton3.IconChar = FontAwesome.Sharp.IconChar.FastForward
-        IconButton3.IconColor = Color.Gainsboro
-        IconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto
-        IconButton3.IconSize = 32
-        IconButton3.ImageAlign = ContentAlignment.MiddleLeft
-        IconButton3.Location = New Point(0, 215)
-        IconButton3.Name = "IconButton3"
-        IconButton3.Padding = New Padding(10, 0, 20, 0)
-        IconButton3.Size = New Size(202, 50)
-        IconButton3.TabIndex = 3
-        IconButton3.Text = "Product"
-        IconButton3.TextAlign = ContentAlignment.MiddleLeft
-        IconButton3.TextImageRelation = TextImageRelation.ImageBeforeText
-        IconButton3.UseVisualStyleBackColor = True
+        btnproduct.Dock = DockStyle.Top
+        btnproduct.FlatAppearance.BorderSize = 0
+        btnproduct.FlatStyle = FlatStyle.Flat
+        btnproduct.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnproduct.ForeColor = Color.Gainsboro
+        btnproduct.IconChar = FontAwesome.Sharp.IconChar.Tag
+        btnproduct.IconColor = Color.Gainsboro
+        btnproduct.IconFont = FontAwesome.Sharp.IconFont.Auto
+        btnproduct.IconSize = 32
+        btnproduct.ImageAlign = ContentAlignment.MiddleLeft
+        btnproduct.Location = New Point(0, 215)
+        btnproduct.Name = "btnproduct"
+        btnproduct.Padding = New Padding(10, 0, 20, 0)
+        btnproduct.Size = New Size(202, 50)
+        btnproduct.TabIndex = 3
+        btnproduct.Text = "Product"
+        btnproduct.TextAlign = ContentAlignment.MiddleLeft
+        btnproduct.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnproduct.UseVisualStyleBackColor = True
         ' 
-        ' IconButton2
+        ' btnorder
         ' 
-        IconButton2.Dock = DockStyle.Top
-        IconButton2.FlatAppearance.BorderSize = 0
-        IconButton2.FlatStyle = FlatStyle.Flat
-        IconButton2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        IconButton2.ForeColor = Color.Gainsboro
-        IconButton2.IconChar = FontAwesome.Sharp.IconChar.FastForward
-        IconButton2.IconColor = Color.Gainsboro
-        IconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto
-        IconButton2.IconSize = 32
-        IconButton2.ImageAlign = ContentAlignment.MiddleLeft
-        IconButton2.Location = New Point(0, 165)
-        IconButton2.Name = "IconButton2"
-        IconButton2.Padding = New Padding(10, 0, 20, 0)
-        IconButton2.Size = New Size(202, 50)
-        IconButton2.TabIndex = 2
-        IconButton2.Text = "Order"
-        IconButton2.TextAlign = ContentAlignment.MiddleLeft
-        IconButton2.TextImageRelation = TextImageRelation.ImageBeforeText
-        IconButton2.UseVisualStyleBackColor = True
+        btnorder.Dock = DockStyle.Top
+        btnorder.FlatAppearance.BorderSize = 0
+        btnorder.FlatStyle = FlatStyle.Flat
+        btnorder.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnorder.ForeColor = Color.Gainsboro
+        btnorder.IconChar = FontAwesome.Sharp.IconChar.Utensils
+        btnorder.IconColor = Color.Gainsboro
+        btnorder.IconFont = FontAwesome.Sharp.IconFont.Auto
+        btnorder.IconSize = 32
+        btnorder.ImageAlign = ContentAlignment.MiddleLeft
+        btnorder.Location = New Point(0, 165)
+        btnorder.Name = "btnorder"
+        btnorder.Padding = New Padding(10, 0, 20, 0)
+        btnorder.Size = New Size(202, 50)
+        btnorder.TabIndex = 2
+        btnorder.Text = "Order"
+        btnorder.TextAlign = ContentAlignment.MiddleLeft
+        btnorder.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnorder.UseVisualStyleBackColor = True
         ' 
-        ' IconButton1
+        ' btndashboard
         ' 
-        IconButton1.Dock = DockStyle.Top
-        IconButton1.FlatAppearance.BorderSize = 0
-        IconButton1.FlatStyle = FlatStyle.Flat
-        IconButton1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        IconButton1.ForeColor = Color.Gainsboro
-        IconButton1.IconChar = FontAwesome.Sharp.IconChar.FastForward
-        IconButton1.IconColor = Color.Gainsboro
-        IconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto
-        IconButton1.IconSize = 32
-        IconButton1.ImageAlign = ContentAlignment.MiddleLeft
-        IconButton1.Location = New Point(0, 115)
-        IconButton1.Name = "IconButton1"
-        IconButton1.Padding = New Padding(10, 0, 20, 0)
-        IconButton1.Size = New Size(202, 50)
-        IconButton1.TabIndex = 1
-        IconButton1.Text = "Dashboard"
-        IconButton1.TextAlign = ContentAlignment.MiddleLeft
-        IconButton1.TextImageRelation = TextImageRelation.ImageBeforeText
-        IconButton1.UseVisualStyleBackColor = True
+        btndashboard.Dock = DockStyle.Top
+        btndashboard.FlatAppearance.BorderSize = 0
+        btndashboard.FlatStyle = FlatStyle.Flat
+        btndashboard.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btndashboard.ForeColor = Color.Gainsboro
+        btndashboard.IconChar = FontAwesome.Sharp.IconChar.ChartLine
+        btndashboard.IconColor = Color.Gainsboro
+        btndashboard.IconFont = FontAwesome.Sharp.IconFont.Auto
+        btndashboard.IconSize = 32
+        btndashboard.ImageAlign = ContentAlignment.MiddleLeft
+        btndashboard.Location = New Point(0, 115)
+        btndashboard.Name = "btndashboard"
+        btndashboard.Padding = New Padding(10, 0, 20, 0)
+        btndashboard.Size = New Size(202, 50)
+        btndashboard.TabIndex = 1
+        btndashboard.Text = "Dashboard"
+        btndashboard.TextAlign = ContentAlignment.MiddleLeft
+        btndashboard.TextImageRelation = TextImageRelation.ImageBeforeText
+        btndashboard.UseVisualStyleBackColor = True
         ' 
         ' panelogo
         ' 
@@ -193,6 +193,7 @@ Partial Class mainform
         ' 
         ' Guna2Panel2
         ' 
+        Guna2Panel2.BackColor = Color.FromArgb(CByte(53), CByte(61), CByte(93))
         Guna2Panel2.CustomizableEdges = CustomizableEdges5
         Guna2Panel2.Dock = DockStyle.Top
         Guna2Panel2.Location = New Point(202, 0)
@@ -220,9 +221,9 @@ Partial Class mainform
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents panelogo As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton5 As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton4 As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton3 As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
+    Friend WithEvents btndashboard As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnuser As FontAwesome.Sharp.IconButton
+    Friend WithEvents btntables As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnproduct As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnorder As FontAwesome.Sharp.IconButton
 End Class
