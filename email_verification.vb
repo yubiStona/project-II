@@ -8,7 +8,7 @@ Public Class email_verification
     Dim con As SqlConnection = New SqlConnection("Data Source=LOCALHOST;Initial Catalog=cafeteriadb;Integrated Security=True;Encrypt=False")
     Dim verificationcode As String '= Guid.NewGuid().ToString
     Dim username As String = "dhunganahr.88@gmail.com"
-    Dim password As String = "ulny ebfd lvzy fgso"
+    Dim password As String = "your google app password"
 
 
 
